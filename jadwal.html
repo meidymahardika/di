@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Hari Ini</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(180deg, #f3e9fc, #ffffff);
+    }
+    .active-date {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .schedule-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+    .schedule-card h6 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .schedule-card p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .schedule-time {
+      font-size: 14px;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <!-- Header Navigation -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <button class="btn btn-link p-0">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <div class="d-flex align-items-center">
+        <h5 class="mb-0">Jan 2024</h5>
+        <button class="btn btn-link ms-2 p-0">
+          <i class="bi bi-calendar"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Days of the Week -->
+    <div class="d-flex justify-content-between mb-3 text-center">
+      <div>
+        <p class="mb-0">Senin</p>
+        <p class="mb-0">06</p>
+      </div>
+      <div>
+        <p class="mb-0">Selasa</p>
+        <p class="mb-0">07</p>
+      </div>
+      <div class="active-date p-2">
+        <p class="mb-0">Rabu</p>
+        <p class="mb-0">08</p>
+      </div>
+      <div>
+        <p class="mb-0">Kamis</p>
+        <p class="mb-0">09</p>
+      </div>
+      <div>
+        <p class="mb-0">Jumat</p>
+        <p class="mb-0">10</p>
+      </div>
+    </div>
+
+    <!-- Schedule Section -->
+    <h6 class="mb-3">Jadwal Hari Ini</h6>
+    <div class="schedule-card p-3">
+      <div class="d-flex justify-content-between">
+        <h6>Ilmu Pengetahuan Alam (IPA)</h6>
+        <p class="schedule-time">07.30 - 09.00</p>
+      </div>
+      <p>Bab 1: Anatomi tubuh</p>
+    </div>
+    <div class="schedule-card p-3">
+      <div class="d-flex justify-content-between">
+        <h6>Istirahat Pertama</h6>
+        <p class="schedule-time">09.00 - 10.00</p>
+      </div>
+    </div>
+    <div class="schedule-card p-3">
+      <div class="d-flex justify-content-between">
+        <h6>Ilmu Pengetahuan Sosial (IPS)</h6>
+        <p class="schedule-time">10.00 - 11.30</p>
+      </div>
+      <p>Bab 1: Sejarah BPUPKI</p>
+    </div>
+    <div class="schedule-card p-3">
+      <div class="d-flex justify-content-between">
+        <h6>Bahasa Inggris</h6>
+        <p class="schedule-time">11.30 - 12.15</p>
+      </div>
+      <p>Bab 1: Listening</p>
+    </div>
+    <div class="schedule-card p-3">
+      <div class="d-flex justify-content-between">
+        <h6>Istirahat Kedua</h6>
+        <p class="schedule-time">12.15 - 13.15</p>
+      </div>
+    </div>
+    <div class="schedule-card p-3">
+      <div class="d-flex justify-content-between">
+        <h6>Pendidikan Agama Islam</h6>
+        <p class="schedule-time">13.15 - 14.00</p>
+      </div>
+      <p>Bab 1: Mengenal Nama Malaikat Allah</p>
+    </div>
+    <div class="schedule-card p-3">
+      <div class="d-flex justify-content-between">
+        <h6>Pulang</h6>
+        <p class="schedule-time">14.00</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

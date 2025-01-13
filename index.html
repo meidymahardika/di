@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Orang Tua</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header-icon {
+      display: flex;
+      align-items: center;
+    }
+    .card-header-icon img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .attendance-chart {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .btn-open-book {
+      background-color: #d4f1d4;
+      color: #28a745;
+    }
+    .btn-close-book {
+      background-color: #fddede;
+      color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <!-- Header -->
+    <div class="row" style="display: flex; align-items: center;">
+        <div class="col-8">
+            <div class="card p-2" style="flex-direction: row;">
+              <div class="card-header-icon">
+                <img src="https://decisionsystemsgroup.github.io/workshop-html/img/john-doe.jpg" alt="User">
+                <div>
+                  <h5>Halo, Orang Tua!</h5>
+                  <small>Putri Indah</small>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div style="display: flex; align-items: center;">
+              <button type="button" 
+                      class="btn btn-lg btn-secondary">
+                  <i class="fa fa-comment"></i>
+              </button>
+              <button type="button" 
+                      class="btn btn-lg btn-secondary ms-1">
+                  <i class="fa fa-bell"></i>
+              </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="my-3">
+      <div class="row">
+        <div class="col-4">
+            <button class="btn btn-primary w-100">Nilai</button>
+        </div>
+        <div class="col-4">
+            <a href="jadwal.html">
+                <button class="btn btn-primary w-100">Jadwal</button>
+            </a>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-primary w-100">Tugas</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attendance -->
+    <div class="my-4">
+      <h6>Jumlah Kehadiran Siswa <a href="#" class="float-end">Lihat Detail</a></h6>
+      <div class="text-center py-3">
+        <div class="progress-circle bg-light p-3 rounded-circle">
+          <span class="attendance-chart">90/93</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exam Schedule -->
+    <div class="my-4">
+      <h6>Jadwal Ujian</h6>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h6>Matematika</h6>
+          <p>Bab 1: Pecahan <span class="text-muted float-end">24 Januari 2025</span></p>
+          <div class="d-flex align-items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdrkNdumT-XgDOUdMgaleHw1Zr1F2cB0satw&s" alt="Teacher" class="rounded-circle me-2" style="width: 50px;">
+            <span>Andini Fahwa</span>
+            <span class="ms-auto badge btn-open-book">Open Book</span>
+          </div>
+        </div>
+      </div>
+      <!-- Additional subjects go here -->
+    </div>
+
+    <!-- Tasks -->
+    <div class="my-4">
+      <h6>Tugas</h6>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h6>IPA</h6>
+          <p>Bab 1: Anatomi <span class="text-muted float-end">24 Januari 2025</span></p>
+          <div class="d-flex align-items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdrkNdumT-XgDOUdMgaleHw1Zr1F2cB0satw&s" alt="Teacher" class="rounded-circle me-2" style="width: 50px;">
+            <span>Cherly Anyelwn</span>
+            <button class="btn btn-primary ms-auto">Kerjakan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Announcement -->
+    <div class="my-4">
+      <h6>Pengumuman</h6>
+      <div class="alert alert-warning">
+        <h6>Hari Lingkungan Hidup Nasional</h6>
+        <p>Dalam rangka Hari Lingkungan Nasional, siswa diharapkan membawa 1 tanaman dari rumah.</p>
+        <small>Jumat, 24 Januari 2025</small><br>
+        <small>MI Ar-Royyan Bojonegoro</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
