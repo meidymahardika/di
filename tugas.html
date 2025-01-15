@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background: linear-gradient(180deg, #f3e9fc, #ffffff);
+    }
+    .profile-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #28a745;
+    }
+    .active-date {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .homework-card {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #eee;
+    }
+    .status-badge {
+        float: right;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .status-empty {
+        color: red;
+    }
+    .status-success {
+        color: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <!-- Header Navigation -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+    <a href="index.html">
+        <button class="btn btn-light">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+    </a>
+        <img src="https://decisionsystemsgroup.github.io/workshop-html/img/john-doe.jpg" alt="Profile" class="profile-icon">
+    </div>
+
+    
+    <!-- Schedule Section -->
+    <h6 class="mb-3">Tugas</h6>
+
+    <!-- Nav -->
+    <div class="my-3">
+        <div class="row">
+            <div class="col-4">
+                <button class="btn btn-primary w-100" style="font-size: small;">Semua</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary w-100" style="font-size: small;">Belum Dikerjakan</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary w-100" style="font-size: small;">Sudah Dikumpulkan</button>
+            </div>
+          </div>
+    </div>
+
+    <div class="homework-list">
+        <div class="homework-card">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h6 class="mb-1">Pekerjaan Rumah 1</h6>
+                    <small class="text-muted">IPA</small>
+                </div>
+                <div class="text-end">
+                    <div class="status-badge status-empty">Kosong</div>
+                    <small class="text-muted d-block">24/01/2025</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="homework-card">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h6 class="mb-1">Pekerjaan Rumah 2</h6>
+                    <small class="text-muted">Seni Budaya</small>
+                </div>
+                <div class="text-end">
+                    <div class="status-badge status-success">Berhasil Dikumpulkan</div>
+                    <small class="text-muted d-block">25/01/2025</small>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
